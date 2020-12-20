@@ -1,3 +1,11 @@
 install live server extension
 add html file
 right-click in html file and click > open with live server
+
+# js events
+    - onchange 
+    - onclick
+    - onmouseover
+    - onmouseout
+    - onkeydown
+    - onload
