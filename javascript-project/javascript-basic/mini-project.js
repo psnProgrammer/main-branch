@@ -30,5 +30,25 @@ function convertDegreeF2C(fahrenheit){
 
     console.log(result)
 }
-
 console.log(convertDegreeF2C(30));
+
+function showCar(){
+    var car = {
+        brand:"BMW",
+        model:"X5",
+        color:"Black",
+        type:"suv",
+        carDetail: function(){  // Method
+            return this.brand + " " + this.model + " " + this.color + " " + this.type;  // this ~== object
+        }
+    
+    };
+    console.log(car.carDetail());
+    // console.log(car)
+    // console.log(car["brand"])
+
+}
+showCar();
+
+
+
