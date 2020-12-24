@@ -55,4 +55,12 @@ function displayDateTime(){
 }
 
 
+function displayArrayAsString(){
+    var vendor = ["Honda","Kawasaki","Suzuki"];
+    // document.getElementById('vendor').innerHTML = vendor.toString();
+    document.getElementById('vendor').innerHTML = vendor.join(' - ')
+
+
+}
+displayArrayAsString();
 

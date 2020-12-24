@@ -9,3 +9,31 @@ right-click in html file and click > open with live server
     - onmouseout
     - onkeydown
     - onload
+
+
+# Array Literal
+
+    var vendor = ["Honda","Kawasaki","Suzuki"];
+
+    var vendor2 = new Array("Honda","Kawasaki","Suzuki");
+
+    // method
+    vendor.pop("...") .push("...") .shift() .unshift("...") ;
+
+    delete vendor[0]
+
+    vendor.splice(number,deleteCount,item,item2 )
+
+    arr2 = arr1.concat([..., ..., ...])
+    arr2 = arr1.slice(start,end)
+
+    typeoff // check type
+
+    Math.PI;
+    Math.round(3.4);
+    Math.pow(4,5);
+    Math.sqrt(64);
+    Math.abs((-5.5));
+    Math.celi(4.5); -- 5
+    Math.floor(4.5); -- 4
+    Math.random();
