@@ -144,7 +144,7 @@ console.log(arrowFunction("Arrow Function"));
 
 
 class cvendor{
-    constructor(brand,color,year){  // property of class
+    constructor(brand, color, year){  // property of class
         this.brand = brand;
         this.color = color;
         this.year = year;
@@ -164,3 +164,21 @@ var vendor = new cvendor("BMW","Black","2019");
 console.log(vendor.fullName("Nattapon"));
 
 console.log(cvendor.testStaticMethod());
+
+
+class subcvendor extends cvendor{
+    constructor(brand, color, year, model, owner){
+        super(brand, color, year);
+        this.model = model;
+        this.owner = owner;
+
+    }
+
+    show(){
+        return this.fullName(this.owner) + " " + this.model;
+    }
+}
+
+var item = new subcvendor("BMW","Black","2019", "X5","Nattapon");
+
+console.log(item.show())
