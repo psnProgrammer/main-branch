@@ -153,8 +153,14 @@ class cvendor{
     fullName(owner){ //method
         return `${owner}: ${this.brand} ${this.color} ${this.year}`;
     }
+
+    static testStaticMethod(){
+        return "I'm Static Method";
+    }
 }
 
 var vendor = new cvendor("BMW","Black","2019");
 
 console.log(vendor.fullName("Nattapon"));
+
+console.log(cvendor.testStaticMethod());
