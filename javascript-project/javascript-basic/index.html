@@ -11,14 +11,15 @@
 
     <p>Click button to change background color</p>
     <button onclick="randomBg();"> Random bg color</button>
-    <button onclick="resetBg();"> Reset bg color</button>
+    <button onclick="resetBg();" id="resetbgbtn" disabled="false"> Reset bg color</button>
 
-    <!-- <button onclick="alert('Event: Alert')">Event OnClick</button> -->
-    <button onclick="displayDateTime();">Show time</button>
+    <!-- <button onclick="alert("Event: Alert")">Event OnClick</button> -->
+    <button onclick="displayDateTime();" id="timebtn">Show time</button>
 
+    <button onclick="invisibleMe();" id="invbtn" style="visibility:hidden;">Hide time!</button>
 
-    <p id='datetime'></p>
-    <p id='vendor'></p>
+    <p id="datetime"></p>
+    <p id="console"></p>
 
 
     <script src="mini-project.js">

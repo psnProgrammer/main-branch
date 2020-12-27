@@ -27,7 +27,7 @@ right-click in html file and click > open with live server
     arr2 = arr1.concat([..., ..., ...])
     arr2 = arr1.slice(start,end)
 
-    typeoff // check type
+    typeoff ... // check type
 
     Math.PI;
     Math.round(3.4);
@@ -37,3 +37,67 @@ right-click in html file and click > open with live server
     Math.celi(4.5); -- 5
     Math.floor(4.5); -- 4
     Math.random();
+
+
+# if - else 
+
+    if (condition){
+        // do somethings
+    }else if (){
+        // do somethings
+    }else{
+        // do somethings
+    }
+
+
+# switch case
+
+    switch(expression){
+        case x:
+            //do somethings
+            break;
+        default:
+            //do somethings
+            break;
+    }
+
+# for in var
+
+    var vendors = ["Honda","Kawasaki","Suzuki"];
+
+    for (var x of vendors){
+        console.log(x);
+    }
+
+# types of objects
+    - Objects
+    - Date
+    - Array
+    - String
+    - Number
+    - Boolean
+
+    - null
+    - undefined
+
+
+# global variable
+
+    item = "somethings";    # global
+
+# Hoisted 
+
+    var x;  // Hoisted == declare at first line 
+    var y = 10;
+
+
+# strict mode
+
+    "use strict"; // first line of code // hoist = error
+
+# var let const
+                    var   let const
+    re-declare      yes   no   no
+    change value    yes   yes  no 
+    lock scope      no    yes  yes
+
