@@ -123,3 +123,38 @@ function invisibleMe(){
 }
 
 document.getElementById("console").innerHTML = "**Other result in dev tools: console";
+
+
+function templatestr(txt){
+
+    console.log(`Hello ${txt} !!!`)
+}
+
+templatestr("Template String")
+
+/*
+var arrowFunction = function(txt){
+    return `Hello ${txt} !!`;
+}
+*/
+
+var arrowFunction = txt => `Hello ${txt} !!`;
+
+console.log(arrowFunction("Arrow Function"));
+
+
+class cvendor{
+    constructor(brand,color,year){  // property of class
+        this.brand = brand;
+        this.color = color;
+        this.year = year;
+    }
+
+    fullName(owner){ //method
+        return `${owner}: ${this.brand} ${this.color} ${this.year}`;
+    }
+}
+
+var vendor = new cvendor("BMW","Black","2019");
+
+console.log(vendor.fullName("Nattapon"));
